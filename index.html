@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Currículo</title>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+    </head>
+    <header>
+        <h1>Nome Sobrenome</h1>
+        <h3>Programador</h3>
+        <div class="contact-info">
+            <p><strong>Email: </strong>contato@emai.com</p>
+            <p><strong>Telefone: </strong> ** **********</p>
+        </div>
+    </header>
+    <main>
+        <p>
+            Praesent vehicula lorem et tellus lobortis, sed lacinia turpis varius. Duis sit amet purus ligula. Maecenas aliquet lorem lacus. Nam dapibus pellentesque sodales. In consectetur nisl felis, porttitor pretium velit facilisis vel. Ut at ante enim. Sed elementum diam ac libero varius, a tristique risus consequat. Nunc semper sed felis ac vestibulum. Suspendisse potenti. Vestibulum quis lorem euismod, iaculis nisl nec, auctor lectus. Donec ornare eget odio vitae ullamcorper.
+        </p>
+        <section>
+            <h2>Lorem ipsum dolor sit amet. </h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit amet ullam culpa quasi ipsa vel odit impedit.</p>
+        </section>
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>
+                    Linguanges / Frameworks
+                    <ul>
+                        <li class="preferred">Javascript / Node.js</li>
+                        <li class="preferred">HTML / CSS</li>
+                        <li class="preferred">React.js</li>
+                        <li class="preferred">Python</li>
+                        <li>PHP</li>
+                    </ul>
+                </li>
+                <li>
+                    Banco de dados
+                    <ul>
+                        <li class="preferred">MongoDB</li>
+                        <li>MySQL</li>
+                    </ul>
+                </li>
+                <li>
+                    Ferramentas
+                    <ul>
+                        <li class="preferred">Linux</li>
+                        <li>Git</li>
+                        <li>Jest</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <div class="projects">
+                    <div class="project">
+                        <h4>projeto-d</h4>
+                        <p>
+                            <strong>Descrição: </strong>Lorem ipsum dolor sit amet.
+                        </p>
+                        <p>
+                            <strong>Tecnologias: </strong>Python e framework Qt para interface
+                            gráfica.
+                        </p>
+                        <p><strong>Tempo de desenvolvimento: </strong>20+ horas.</p>
+                    </div class="project">
+
+                    <div class="project">
+                        <h4>projeto-b</h4>
+                        <p>
+                            <strong>Descrição: </strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, perspiciatis facilis numquam temporibus vero eos corrupti?
+                        </p>
+                        <p><strong>Tecnologias: </strong>React.js, Node.js, MongoDB, Socket.IO, Api-twitch, IRC-twitch.</p>
+                        <p><strong>Tempo de desenvolvimento: </strong>90+ horas.</p>
+                    </div class="project">
+            </div>
+        </section>
+    </main>
+    <style>
+        html,
+        body,
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header,
+        main {
+            font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", system-ui,
+                sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem;
+            gap: 1.7rem;
+            background-color: black;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 0.12rem;
+        }
+
+        header .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-size: 0.8rem;
+            color: #ffffffa1;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 3.5rem;
+            color: #5a5a5a;
+        }
+
+        main p {
+            font-size: 0.9rem;
+        }
+
+        main section h1,
+        h2,
+        h3::before {
+            border-bottom: rgba(0, 0, 0, 0.222) 2px solid;
+            margin-bottom: 0.5rem;
+        }
+
+        main section ul {
+            padding-left: 2.5rem;
+        }
+
+        main section ul li.preferred::after {
+            font-family: "Material Icons";
+            content: "star";
+            -webkit-font-feature-settings: "liga";
+            font-feature-settings: "liga";
+            font-size: 0.8rem;
+            margin-left: 0.2rem;
+        }
+
+        main section .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        main section .projects .project {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        main section .projects .project p {
+            margin-left: 1.5rem;
+        }
+    </style>
+</html>
